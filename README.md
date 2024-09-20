@@ -1,12 +1,7 @@
 # EXPERIMENT--02-INTEFACING-A-DIGITAL-INPUT-TO-ARM-DEVELOPMENT-BOARD
-## Aim:
-
-To Interface a Digital Input  (userpush button  ) to ARM   development board and write a  program to obtain  the data and flash the led  
-## Components required:
-
-STM32 CUBE IDE, ARM IOT development board,  STM programmer tool.
+## Aim: To Interface a Digital Input  (userpush button  ) to ARM   development board and write a  program to obtain  the data and flash the led  
+## Components required: STM32 CUBE IDE, ARM IOT development board,  STM programmer tool.
 ## Theory 
-
 The full form of an ARM is an advanced reduced instruction set computer (RISC) machine, and it is a 32-bit processor architecture expanded by ARM holdings. The applications of an ARM processor include several microcontrollers as well as processors. The architecture of an ARM processor was licensed by many corporations for designing ARM processor-based SoC products and CPUs. This allows the corporations to manufacture their products using ARM architecture. Likewise, all main semiconductor companies will make ARM-based SOCs such as Samsung, Atmel, TI etc.
 
  
@@ -62,37 +57,35 @@ The full form of an ARM is an advanced reduced instruction set computer (RISC) m
 void push_button();
 bool button_status;
 
- while (1)
-  {
+while (1)
+{
 	  push_button();
-   
-  }
-  
+}
 
-void push_button(){
-	button_status=HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_0);
+
+void push_button()
+{
+	button_status= HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_0);
 	if(button_status==1)
 	{
 		HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_SET);
 		HAL_Delay(500);
 		HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_RESET);
 		HAL_Delay(500);
-	}
+  	}
 	else
 	{
 		HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_RESET);
-		HAL_Delay(500);
+				HAL_Delay(500);
 	}
 }
 ```
 
-
 ## Output  :
-![image](https://github.com/user-attachments/assets/b6a954ab-31ba-4bd9-824f-c8fc3ac90d56)
+ ![2 2](https://github.com/user-attachments/assets/2de81d7e-4aec-4f30-b3f6-3ca59807012f)
 
- 
 ## layout of the circuit 
- ![image](https://github.com/user-attachments/assets/b44728da-8635-47b4-8eda-1a16e2166b98)
+ ![2 1](https://github.com/user-attachments/assets/ba93a2b9-df2f-475e-89a2-f6acdb11a0f7)
 
  
 ## Result :
