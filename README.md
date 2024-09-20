@@ -1,7 +1,12 @@
 # EXPERIMENT--02-INTEFACING-A-DIGITAL-INPUT-TO-ARM-DEVELOPMENT-BOARD
-## Aim: To Interface a Digital Input  (userpush button  ) to ARM   development board and write a  program to obtain  the data and flash the led  
-## Components required: STM32 CUBE IDE, ARM IOT development board,  STM programmer tool.
+## Aim:
+
+To Interface a Digital Input  (userpush button  ) to ARM   development board and write a  program to obtain  the data and flash the led  
+## Components required:
+
+STM32 CUBE IDE, ARM IOT development board,  STM programmer tool.
 ## Theory 
+
 The full form of an ARM is an advanced reduced instruction set computer (RISC) machine, and it is a 32-bit processor architecture expanded by ARM holdings. The applications of an ARM processor include several microcontrollers as well as processors. The architecture of an ARM processor was licensed by many corporations for designing ARM processor-based SoC products and CPUs. This allows the corporations to manufacture their products using ARM architecture. Likewise, all main semiconductor companies will make ARM-based SOCs such as Samsung, Atmel, TI etc.
 
  
@@ -52,10 +57,6 @@ The full form of an ARM is an advanced reduced instruction set computer (RISC) m
 
 ## STM 32 CUBE PROGRAM :
 ```
-Name: Barath S
-Reg no: 212222230018
-```
-```c
 #include "main.h"
 #include "stdbool.h"
 void push_button();
@@ -85,11 +86,13 @@ void push_button(){
 }
 ```
 
-## Output  :
- ![pmc-ex-2 1](https://github.com/user-attachments/assets/4fc30791-a58e-413d-b579-ff8abaae2c22)
 
+## Output  :
+![image](https://github.com/user-attachments/assets/b6a954ab-31ba-4bd9-824f-c8fc3ac90d56)
+
+ 
 ## layout of the circuit 
- ![pmc-ec-2 2](https://github.com/user-attachments/assets/64797030-b6a5-45d6-a5ae-1885f1cadfef)
+ ![image](https://github.com/user-attachments/assets/b44728da-8635-47b4-8eda-1a16e2166b98)
 
  
 ## Result :
